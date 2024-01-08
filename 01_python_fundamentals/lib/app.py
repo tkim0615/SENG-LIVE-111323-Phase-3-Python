@@ -89,11 +89,37 @@ print(pet_greeting("Rose"))
 # 5. ✅ Move conditional logic from Deliverable 1 into a function (pet_status) so that we may use it with different pets / moods
     # Test invocation of "pet_status" in ipdb using "pet_status(pet_name, pet_mood)"
     # pet_status("Rose", "Hungry!") => "Rose needs to be fed."
-    # pet_greeting("Spot", "Rowdy!") => "Spot needs a walk."
-    # pet_greeting("Bud", "Relaxed") => "Bud is all good."
+    # pet_status("Spot", "Rowdy!") => "Spot needs a walk."
+    # pet_status("Bud", "Relaxed") => "Bud is all good."
     
     # Take a moment to note that "pet_name" and "pet_mood" parameters are within Local Scope and take priority over "pet_name" and "pet_mood"
     # in Global Scope.
+
+def pet_status(pet_name, pet_mood):
+    if pet_mood == "Hungry!":
+        print(f"{pet_name} needs to be fed.")
+    elif pet_mood == "Rowdy!":
+        print(f"{pet_name} needs a walk")
+    else: 
+        print(f"{pet_name} is all good.")
+
+pet_status("Spot", "Rowdy!")
+
+counter = 0 #10 #20
+print(counter)
+
+def increment_counter():
+    global counter 
+    counter += 10 
+    print(counter) #10 
+
+def double_counter():
+    global counter #10
+    counter *= 2 #20
+    print(counter)
+
+increment_counter()
+double_counter()
 
 # 6. ✅ Create a function (pet_birthday) that will increment a pet's age up by 1. Use try / except to handle errors. 
     # If our function is given an incorrect datatype, it should handle the TypeError exception and alert the user
@@ -102,6 +128,15 @@ print(pet_greeting("Rose"))
 
     # Note => To view more common Python exceptions, visit https://docs.python.org/3/library/exceptions.html
 
+def pet_birthday(age):
+    # print(f"Happy Birthday! Your pet is now {age+1}.") 
+    # # if type(age) == int else print("Type Error Occurred")
+    try: #try block
+        return f"Happy Birthday! Your pet is now {age+1}."
+    except TypeError: #except block
+        return "Type Error Occurred"
+
+print(pet_birthday("ten"))
 # 🚨 To create an ipdb breakpoint, comment / uncomment line below:
 # ipdb.set_trace()
 
