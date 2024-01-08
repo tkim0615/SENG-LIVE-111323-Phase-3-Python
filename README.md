@@ -1,4 +1,4 @@
-# SENG-LIVE-000000 Phase 3 - Python
+# SENG-LIVE-111323 Phase 3 - Python
 
 ## Phase Level Objectives
 
@@ -7,7 +7,7 @@
 - Perform CRUD actions on a database using SQLAlchemy & Alembic
 - Design an API to handle CRUD actions
 - Communicate with an API using different HTTP verbs
-- Create and present a project with a React frontend and a database-backed API backend
+- Create and present a project with a database-backed API backend
 
 
 | Lecture | Notes | Videos | Starter | Solution |
@@ -18,8 +18,6 @@
 | 4. (00/00/00) OOP 2: Class Methods & Class Variables     |   [Notes](#)    |   [Video](#)     |   [Starter](#)      |  [Solution](#)        |
 | 5. (00/00/00) SQL Fundamentals & Table Relations     |  [Notes](#)     |   [Video](#)     |   [Starter](#)      |   [Solution](#)         |
 | 6. (00/00/00) Object-Relational Mapping     |   [Notes](#)    |   [Video](#)     |    [Starter](#)     |   [Solution](#)       |
-| 7. (00/00/00) SQLAlchemy & Alembic     |   [Notes](#)    |    [Video](#)    |   [Starter](#)      |    [Solution](#)      |
-| 8. (00/00/00) SQLAlchemy Associations     |   [Notes](#)    |    [Video](#)    |   [Starter](#)      |    [Solution](#)      |
 
 ## 1: Python Fundamentals
 ### Lecture Goals:
@@ -209,75 +207,4 @@
 - How to Use Data From a Database to Make Python Objects
 - Mapping a Database Table to a Python Object
 - Turning Database Rows into Python Objects
-
-
-## 7: SQLAlchemy & Alembic
-### Lecture Goals:
-- Explain what SQLAlchemy is and how it benefits us as an ORM
-    - Demonstrate creating a database with SQLAlchemy 
-    - Demonstrate creating a schema
-    - Demonstrate creating columns with SQLAlchemy
-    - Demonstrate creating column constraints with SQLAlchemy 
-    - Demonstrate creating indexes with SQLAlchemy 
-    - Demonstrate creating default values 
-- Explain Alembic and what it does for us
-    - Demonstrate configuring an application to use Alembic 
-    - Demonstrate creating migrations using Alembic
-    - Demonstrate creating manual migrations using Alembic
-    - Demonstrate CRUD in SQLAlcehmy
-        - Adding data with .commit
-            - `.all`, `.order_by`, `desc`, `limit`, function filter, and loop compression to grab specific columns 
-        - Querying data with `.query`
-        - Updating data with `.update` and `.commit`
-        - Deleting data with `.delete`
-
-### Lecture Topics:
-- Creating a Database 
-- Creating a Schema 
-    - Columns 
-    - Constraints
-    - Index
-    - Default Values
-- Alembic
-    - Migrations
-        - Configuring the Migration Environment
-        - Creating Migrations 
-        - Manual Migrations 
-- CRUD 
-    - Sessions 
-    - Transactions
-    - `__repr__`
-    - Creating Records
-        - Seeding Data
-    - Reading Records
-        - Selecting Specific Columns
-        - Ordering
-        - Limits
-        - Filtering 
-        - Func
-    - Updating Data
-    - Deleting Data
-
-## 8: SQLAlchemy Associations
-### Lecture Goals:
-- Review relationships, Primary keys, and Foreign keys
-- Demonstrate creating a table with a Foreign key and referencing another table using `relationship()` and `backref()`
-- Demonstrate using Alembic to generate tables with relationships 
-- Demonstrate querying methods to view table relationships
-- Demonstrate a “one to many” association
-- Demonstrate a “many to many” association with a join model 
-- Stretch Goal
-    - Demonstrate using a CLI to access a backend application
-
-### Lecture Topics:
-- Design Database Tables
-- One-to-Many 
-- Foreign Key Columns 
-- `relationship()` and `backref()`
-- One-to-One
-- Alembic Migrations to Generate Table Relationships
-- Relation Query Methods 
-- Many-to-Many 
-- Stretch Topic
-    - Making a CLI
 
