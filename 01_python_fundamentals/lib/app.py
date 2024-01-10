@@ -54,21 +54,6 @@ else:
 # 2. ✅ Create a ternary operator using "pet_mood" as a condition:
     # If pet_mood is "Hungry!" => "Rose needs to be fed."
     # In all other cases => "Rose is all good."
-# pet_mood = "Hungry!"
-# pet_name = "Rose"
-# #2. solution
-# print(f"{pet_name} needs to be fed") if pet_mood == 'Hungry!' else print(f"{pet_name} is all good.")
-# time = 'dinner'
-# print('eat breakfast') if time == 'morning' else print('study python')
-
-
-# if time is morning, print eat breakfast, all other cases study python 
-    
-# JS 
-    #condition? true: false
-# python 
-    # true, if condition else default val 
-print("Rose needs to be fed.") if pet_mood == "Hungry!" else print("Rose is all good.")
 
 # if time is morning, print eat breakfast, all other cases study python 
     
@@ -109,42 +94,6 @@ print(pet_greeting("Rose"))
     
     # Take a moment to note that "pet_name" and "pet_mood" parameters are within Local Scope and take priority over "pet_name" and "pet_mood"
     # in Global Scope.
-#5 solution
-def pet_status(pet_name, pet_mood):
-    if pet_mood == "Hungry!":
-        print(f'{pet_name} needs to be fed.')
-    elif pet_mood == 'Rowdy!':
-        print(f'{pet_name} needs a walk.')
-    else:
-        print(f"{pet_name} is all good.")
-pet_status("Tyler", 'Rowdy!')
-
-
-def pet_status(pet_name, pet_mood):
-    if pet_mood == "Hungry!":
-        print(f"{pet_name} needs to be fed.")
-    elif pet_mood == "Rowdy!":
-        print(f"{pet_name} needs a walk")
-    else: 
-        print(f"{pet_name} is all good.")
-
-pet_status("Spot", "Rowdy!")
-
-counter = 0 #10 #20
-print(counter)
-
-def increment_counter():
-    global counter 
-    counter += 10 
-    print(counter) #10 
-
-def double_counter():
-    global counter #10
-    counter *= 2 #20
-    print(counter)
-
-increment_counter()
-double_counter()
 
 def pet_status(pet_name, pet_mood):
     if pet_mood == "Hungry!":
