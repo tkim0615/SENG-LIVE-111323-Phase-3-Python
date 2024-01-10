@@ -227,6 +227,8 @@ def update_age(list, name, age):
 
 print (update_age(pet_info, 'rose', 99))
 
+# for num in range(0, 10, 2):
+#         print(num ) 
 
 
 
@@ -237,6 +239,22 @@ print (update_age(pet_info, 'rose', 99))
 
 
 
+# def update_age(lst, name, age):
+#     idx = 0
+#     print(len(lst))
+#     # check all the names #
+#     while(lst[idx].get('name') != name and idx < len(lst)-1):
+#            print("every item----")
+#            idx += 1 # keep incrementing the index number to look through every items 
+#     if lst[idx].get('name') == name: # if the name is the same 
+        
+#         print(lst[idx])#print the original dict
+       
+#         lst[idx]['age'] = age # update/ replace the age with the given arg
+        
+#         return lst[idx] # return the new dict with the new age
+#     else:
+#         return 'pet not found'    
 
 
 # pet_info = [
@@ -303,6 +321,7 @@ print (update_age(pet_info, 'rose', 99))
 # # pet_info=[pet.get('name').upper() for pet in pet_info]
 # print(pet_info)
 
+pet_names = [ each_pet.get('name').upper() for each_pet in pet_info]
 
 # # find like
 # #40. ✅ Use list comprehension to find a pet named spot
